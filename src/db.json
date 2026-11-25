@@ -1,0 +1,95 @@
+{
+	"events": [
+		{
+			"id": "e1",
+			"title": "Road house party",
+			"type": "Party",
+			"date": "2026-12-12",
+			"venue": "City gate, Lugbe Abuja",
+			"expectedGuests": 300,
+			"eventType": "paid",
+			"ticketType": {
+				"single-seat": 5000,
+				"table-for-four": 30000,
+				"platinum-table": 120000,
+				"table-for-ten": 5000000
+			}
+		}
+	],
+	"guests": [
+		{
+			"id": "g1",
+			"eventId": "e1",
+			"name": "Tony Hassan",
+			"phone": "07032515857",
+			"group": "friends",
+			"rsvp": "yes",
+			"ticketType": "single-seat"
+		},
+		{
+			"id": "g1",
+			"eventId": "e1",
+			"name": "chioma eze",
+			"phone": "0802225544",
+			"group": "sponsor",
+			"rsvp": "pending",
+			"ticketType": "table-for-four"
+		}
+	],
+	"vendors": [
+		{
+			"id": "v1",
+			"eventId": "e1",
+			"name": "DJ kyc",
+			"category": "DJ",
+			"phone": "07032515235",
+			"quote": 250000,
+			"status": "booked"
+		},
+		{
+			"id": "v2",
+			"eventId": "e1",
+			"name": "Fastest Chops",
+			"category": "food",
+			"phone": "08121254588",
+			"quote": 325000,
+			"status": "inquiry"
+		}
+	],
+	"payments": [
+        {
+            "id": "p1",
+            "eventId": "e1",
+            "status": "paid",
+            "ticketType": "single-seat",
+            "buyer": "Tony Hassan",
+            "amount": 5000
+        },
+        {
+            "id": "p2",
+            "eventId": "e1",
+            "status": "paid",
+            "ticketType": "table-for-four",
+            "buyer": "chioma eze",
+            "amount": 30000
+        }
+    ],
+    "budgetLine": [
+        {
+            "id": "b1",
+            "eventId": "e1",
+            "category": "venue",
+            "item": "Permission to use space",
+            "estimated": 200000,
+            "actual": 220000
+        },
+        {
+            "id": "b2",
+            "eventId": "e1",
+            "category": "food & drinks",
+            "item": "Catering deposit",
+            "estimated": 400000,
+            "actual": 325000
+        }
+    ]
+}
